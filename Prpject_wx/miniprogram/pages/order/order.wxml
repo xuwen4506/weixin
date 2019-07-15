@@ -1,0 +1,13 @@
+<!--pages/order/order.wxml-->
+<view class='middle'>
+
+  <view class='middle_top' wx:for="{{images4}}" wx:key="index" bindtap='jump' data-productid="{{item.id}}">
+    <image src="{{item.order_img}}"></image>
+    <text class='top'>{{item.order_top}}</text>
+    <text class='sub'>{{item.order_sub}}</text>
+    <view class='imade'>
+     <text class='imade_one'>{{item.order_price}}</text>
+     <text class='imade_two'>立即预约</text>
+    </view>
+  </view>
+</view>

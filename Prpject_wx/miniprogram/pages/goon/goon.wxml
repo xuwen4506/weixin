@@ -1,0 +1,18 @@
+<!--pages/goon/goon.wxml-->
+<view class='container' wx:for="{{list}}" wx:key="{{index}}" bindtap='Aldel' data-delid='{{list[index]._id}}'>
+  <view class='c_top'>
+    <text>订单号:{{list[index].orderNumber}}</text>
+    <text>{{list[index].state}}(到店支付)</text>
+  </view>
+  <view class='middle'>
+    <image src="{{list[index].order_img}}"></image>
+    <view class='middle_r'>
+      <text class='top-title'>{{list[index].order_top}}</text>
+      <text class='mid_title'>{{list[index].order_sub}}</text>
+      <view class='price'>
+        <text>{{list[index].order_price}}</text>
+        <text>{{list[index].order_price}}</text>
+      </view>
+    </view>
+  </view>
+</view>

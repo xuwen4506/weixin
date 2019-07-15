@@ -1,0 +1,41 @@
+<!--pages/OrderGoing/OrderGoing.wxml-->
+<view class='container'>
+  <view class='order'>
+    <image src="../../images/ordergo.jpg"></image>
+    <text>订单进行中(到店支付)</text>
+  </view>
+  <!-- 订单消息 -->
+  <view class='info'>
+    <image src="{{list[0].order_img}}"></image>
+    <view class='info_r'>
+      <text>{{list[0].order_top}}</text>
+      <text>{{list[0].order_sub}}</text>
+      <view class='info_price'>
+        <text>{{list[0].order_price}}</text>
+        <text>{{list[0].order_price}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 预约信息 -->
+  <view class='subscribe'>
+    <text>预约信息</text>
+    <text>预约人：{{list[0].username}}</text>
+    <text>预约电话：{{list[0].utel}}</text>
+    <text>买家留言：{{list[0].chat}}</text>
+  </view>
+  <!-- 订单信息 -->
+  <view class='orinfo'>
+    <text>订单信息</text>
+    <text>订单编号：{{list[0].orderNumber}}</text>
+    <text>下单时间：{{list[0].time}}</text>
+  </view>
+  <!-- 地址信息 -->
+  <view class='address'>
+
+    <view bindtap='look'>查看地址</view>
+    <view>联系我们</view>
+
+
+  </view>
+
+</view>

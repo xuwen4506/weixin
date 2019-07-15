@@ -1,0 +1,107 @@
+.container{
+  width: 94%;
+  margin: 0 auto;
+  }
+.order{
+  width: 100%;
+  /* height: 30%; */
+  border:1px solid gainsboro;
+  display: flex;
+  margin-top: 40rpx;
+}
+.order image{
+  width: 8%;
+  height: 60rpx;
+}
+.order text{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+.info{
+  width: 100%;
+  border:1px solid gainsboro;
+  display: flex;
+  margin-top: 50rpx;
+
+}
+.info image{
+  width: 20%;
+  height: 100rpx;
+}
+.info_r{
+  width: 78%;
+  /* border: 1px solid navy; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.info_r text:first-child{
+  font-size: 30rpx;
+}
+.info_r text:nth-child(2){
+  font-size: 28rpx;
+  color:gray;
+}
+.info_price{
+  width: 100%;
+  display: flex;
+  margin-top: 30rpx;
+}
+.info_price text:first-child{
+  font-size: 28rpx;
+  color:red;
+}
+.info_price text:last-child{
+   font-size: 25rpx;
+   text-decoration: line-through;
+}
+.subscribe{
+  width: 100%;
+  border:1px solid gainsboro;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe text:first-child{
+  font-size: 30rpx;
+  color:black;
+  margin-bottom: 20rpx;
+}
+.subscribe text:nth-child(2),.subscribe text:nth-child(3),
+.subscribe text:nth-child(4){
+  font-size: 28rpx;
+  color: gray;
+  margin-top: 15rpx;
+}
+.orinfo{
+  width: 100%;
+  border:1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+   margin-top: 50rpx;
+}
+.orinfo text:first-child{
+  font-size: 30rpx;
+  color:black;
+  margin-bottom: 20rpx;
+}
+.orinfo text:nth-child(2),.orinfo text:nth-child(3){
+  font-size: 28rpx;
+  color:gray;
+   margin-top: 15rpx;
+}
+.address{
+  width: 100%;
+  /* border:1px solid red; */
+  display: flex;
+}
+.address view:first-child,.address view:last-child{
+  width: 50%;
+  height: 60rpx;
+  border:1px solid gainsboro;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin-top: 50rpx;
+}

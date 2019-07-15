@@ -1,0 +1,75 @@
+<!--pages/OrderDetails/OrderDetails.wxml-->
+<view class='body'>
+  <van-tabs active="{{active}}" bind:change="onChange">
+    <van-tab title="全部">
+      <!-- 全部内容 -->
+      <view class='container' wx:for="{{fullData}}" wx:key="{{index}}" >
+        <view class='c_top'>
+          <text>订单号:{{fullData[index].orderNumber}}</text>
+          <text>{{fullData[index].state}}(到店支付)</text>
+        </view>
+        <view class='middle' bindtap='delAll' 
+      data-allid='{{fullData[index]._id}}' data-index="{{index}}">
+          <image src="{{fullData[index].order_img}}"></image>
+          <view class='middle_r'>
+            <text class='top-title'>{{fullData[index].order_top}}</text>
+            <text class='mid_title'>{{fullData[index].order_sub}}</text>
+            <view class='price'>
+              <text>{{fullData[index].order_price}}</text>
+              <text>{{fullData[index].order_price}}</text>
+              </view>
+          </view>
+        </view>
+        <view class='dell' bindtap='del' data-delid="{{fullData[index]._id}}">取消预约</view>
+      </view>
+
+    </van-tab>
+    <van-tab title="待支付">当前无待支付内容</van-tab>
+    <van-tab title="进行中">
+      <view class='container' wx:for="{{onGoing}}" wx:key="{{index}}"
+      >
+        <view class='c_top'>
+          <text>订单号:{{onGoing[index].orderNumber}}</text>
+          <text>{{onGoing[index].state}}(到店支付)</text>
+        </view>
+        <view class='middle' bindtap='OrderGoing' data-goid="{{onGoing[index]._id}}">
+          <image src="{{onGoing[index].order_img}}"></image>
+          <view class='middle_r'>
+            <text class='top-title'>{{onGoing[index].order_top}}</text>
+            <text class='mid_title'>{{onGoing[index].order_sub}}</text>
+            <view class='price'>
+              <text>{{onGoing[index].order_price}}</text>
+              <text>{{onGoing[index].order_price}}</text>
+              </view>
+          </view>
+        </view>
+        <view class='dell' bindtap='del' data-delid="{{onGoing[index]._id}}">取消预约
+
+        
+        </view>
+        <!-- <van-dialog id="van-dialog" class='dell' bindtap='del' data-delid="{{onGoing[index]._id}}" /> -->
+      </view>
+      </van-tab>
+    <van-tab title="已完成">当前无完成订单</van-tab>
+    <van-tab title="已取消">
+    <view class='container' wx:for="{{activeContent}}" wx:key="{{index}}"
+     bindtap='Aldel' data-delid='{{activeContent[index]._id}}'>
+        <view class='c_top'>
+          <text>订单号:{{activeContent[index].orderNumber}}</text>
+          <text>{{activeContent[index].state}}(到店支付)</text>
+        </view>
+        <view class='middle'>
+          <image src="{{list[index].order_img}}"></image>
+          <view class='middle_r'>
+            <text class='top-title'>{{activeContent[index].order_top}}</text>
+            <text class='mid_title'>{{activeContent[index].order_sub}}</text>
+            <view class='price'>
+              <text>{{activeContent[index].order_price}}</text>
+              <text>{{activeContent[index].order_price}}</text>
+              </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

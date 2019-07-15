@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/product_detail/product_detail",
+    "pages/OrderCount/OrderCount",
+    "pages/Success/Success",
+    "pages/OrderDetails/OrderDetails",
+    "pages/OrderGoing/OrderGoing",
+    "pages/OrderDel/OrderDel",
+    "pages/OrderAll/OrderAll",
+    "pages/LookMap/LookMap",
+    "pages/delDetails/delDetails",
+    "pages/goon/goon"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/nav11.jpg",
+        "selectedIconPath": "images/nav1.jpg"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订座预约",
+        "iconPath": "images/nav2.jpg",
+        "selectedIconPath": "images/nav22.jpg"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/nav3.jpg",
+        "selectedIconPath": "images/nav33.jpg"
+      }
+       ]
+  }
+ 
+}

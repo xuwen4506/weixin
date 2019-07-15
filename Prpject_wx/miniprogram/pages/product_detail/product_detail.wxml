@@ -1,0 +1,34 @@
+<!--pages/product_detail/product_detail.wxml{{item.order_img}}-->
+<view  data-orderid="{{list[0].id}}">
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block>
+      <swiper-item>
+        <image src="{{list[0].order_img}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='container'>
+  <!-- 第二个 -->
+  <view class='mid'>
+    <text class='mid_top'>{{list[0].order_top}}</text>
+    <text class='mid_cent'>{{list[0].order_sub}}</text>
+    <text class='mid_bot'>{{list[0].order_price}}</text>
+  </view>
+  <!-- 最后介绍 -->
+  <view class='last'>
+    <text class='last_ser'>{{list[0].order_serv}}</text>
+    <text class='last_bot'>{{list[0].order_detal}}</text>
+    <text class='last_deta'>{{list[0].order_detail}}</text>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='bottom_img'>
+    <image src="../../images/tel.jpg"></image>
+    <text>电话</text>
+  </view>
+  <view class='btn' bindtap='count' data-countid='{{list[0].id}}'>立即预约</view>
+</view>
+
+</view>

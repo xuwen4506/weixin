@@ -1,0 +1,96 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"appid": "wxbb0e5888ec619ef2",
+	"projectname": "miniprogram-project-weixin",
+	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订座预约",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单结算",
+					"pathName": "pages/OrderCount/OrderCount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "orderdetails",
+					"pathName": "pages/OrderDetails/OrderDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "全部",
+					"pathName": "pages/OrderDetails/OrderDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "订单进行",
+					"pathName": "pages/OrderDetails/OrderDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进行",
+					"pathName": "pages/OrderGoing/OrderGoing",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

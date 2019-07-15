@@ -1,0 +1,49 @@
+<!--pages/OrderCount/OrderCount.wxml-->
+<view class='top'>
+  <image src="{{list1[0].order_img}}"></image>
+  <view class='right'>
+    <view class='r_t'>
+      <text>{{list1[0].order_top}}</text>
+      <text>{{list1[0].order_sub}}</text>
+    </view>
+    <view class="r_b">
+      <text>{{list1[0].order_price}}</text>
+      <image src="../../images/gift.jpg"></image>
+      <text>到店支付</text>
+    </view>
+  </view>
+</view>
+<view class='bottom'>
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="姓名"
+    icon="question-o"
+    placeholder="请输入姓名"
+    bind:click-icon="onClickIcon"
+    bind:change="onChange1"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="手机号"
+    placeholder="请输入手机号"
+    required
+    border="{{ false }}"
+    bind:change="onChange2"
+  />
+  <van-field
+    value="{{ message }}"
+    label="留言"
+    type="textarea"
+    placeholder="请输入留言"
+    autosize
+    border="{{ false }}"
+    bind:change="onChange3"
+  />
+</van-cell-group>
+</view>
+<view class='sub_btn' bindtap='submit' data-orderid='{{list1[0].id}}'>提价订单</view>

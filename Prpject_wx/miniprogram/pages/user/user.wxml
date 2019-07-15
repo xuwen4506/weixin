@@ -1,0 +1,98 @@
+<view class='full'>
+  <view class="middle">
+    <view class='top'>
+      <view class='top_one'>
+        <!-- <image src="../../images/head.jpg" class='head'></image>
+        <view>请点击登录</view> -->
+
+        <view class='profile'>
+          <view class='profile-img'>
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <view>
+            <open-data type="userNickName" class="profile-name"></open-data>
+          </view>
+        </view>
+
+
+      </view>
+    </view>
+  </view>
+  <view class='center'>
+    <text class="order" bindtap='all'>所有订单</text>
+    <view class='img'>
+      <view class="img_one">
+        <van-icon name="coupon" info="0" color="red" size="60rpx" />
+        <view>待支付</view>
+      </view>
+      <view class="img_two" bindtap='goOn'>
+        <van-icon name="more" info="{{goCount}}" color="red" size="60rpx"/>
+        <view>进行中</view>
+      </view>
+      <view class="img_three">
+        <van-icon name="card" info="0" color="red" size="60rpx" />
+        <view>已完成</view>
+      </view>
+      <view class="img_four" bindtap='delall'>
+        <van-icon name="send-gift" info="{{delcount}}" color="red" size="60rpx" />
+        <view>已取消</view>
+      </view>
+    </view>
+    <!-- 最新消息 -->
+    <text class="order">最新消息</text>
+    <view class='kuang'>
+      <view class='news1'>
+        <van-icon name="notes-o" size="160rpx" color="gray" />
+        <view class='new1_wenzi'>
+          <text class='new1_one'>{{list[0].user_top}}</text>
+          <text class='new1_two'>{{list[0].user_sub}}</text>
+        </view>
+      </view>
+      <view class="o">{{list[0].user_bot}}</view>
+    </view>
+<!-- 第二个 -->
+<view class='kuang' hidden='{{hiddenName}}'>
+      <view class='news1'>
+        <van-icon name="notes-o" size="160rpx" color="gray" />
+        <view class='new1_wenzi'>
+          <text class='new1_one'>{{list[0].user_top}}</text>
+          <text class='new1_two'>{{list[0].user_sub}}</text>
+        </view>
+      </view>
+      <view class="o">{{list[0].user_bot}}</view>
+    </view>
+    <view class='up' bindtap='click'>
+    <text>^</text>
+    <text>{{lookmore}}</text>
+    </view>
+    <!-- bottom -->
+    <view class="bottom">
+      <view class="first">
+        <view class='bot_img'>
+          <image src="../../images/address.jpg"></image>
+        </view>
+        <text class="order">{{list1[0].u_address}}</text>
+      </view>
+      <view class="first">
+        <view class='bot_img'>
+          <image src="../../images/tel.jpg"></image>
+        </view>
+        <text class="order">{{list1[0].u_tel}}</text>
+      </view>
+
+      <view class="first">
+        <view class='bot_img'>
+          <image src="../../images/clock.jpg"></image>
+        </view>
+        <text class="order">{{list1[0].u_time}}</text>
+      </view>
+
+      <view class="first">
+        <view class='bot_img'>
+          <image src="../../images/house.jpg"></image>
+        </view>
+        <text class="order">{{list1[0].u_desc}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<!--pages/index/index.wxml-->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{list2}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.lunbo}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='hot'>热销单品</view>
+  <view class='body'>
+    <view class='one' wx:for="{{list1}}" wx:key="index">
+      <image src="{{item.img}}" />
+      <view class='one_wenzi' class='ziti'>{{item.name}}</view>
+      <view class='one_wenzi' class='p'>{{item.price}}</view>
+    </view>
+  </view>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{list3}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.dz}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="like">猜你喜欢</view>
+  <view class='middle'>
+    <view class='two' wx:for="{{list4}}" wx:key="index">
+      <image src="{{item.like_img}}" class='two_img'></image>
+      <view class='two_wenzi'>{{item.like_name}}</view>
+      <view class='two_wenzi'>{{item.like_price}}</view>
+    </view>
+  </view>
+  <view class='look'>
+    <text>优惠活动</text>
+    <text>查看更多</text>
+  </view>
+  <view class='bottom' wx:for="{{list5}}" wx:key="index">
+    <view class='left'>
+      <text class='top'>{{item.cheap_toptitle}}</text>
+      <text class='sub'>{{item.cheap_subtitle}}</text>
+      <text class='sub'>{{item.cheap_date}}</text>
+    </view>
+    <image src="{{item.cheap_img}}" class='bottom_img'></image>
+  </view>
+
